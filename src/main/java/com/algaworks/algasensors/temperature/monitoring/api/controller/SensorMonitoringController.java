@@ -28,7 +28,7 @@ public class SensorMonitoringController {
                 .id(sensorMonitoring.getId().getValue())
                 .enabled(sensorMonitoring.getEnabled())
                 .lastTemperature(sensorMonitoring.getLastTemperature())
-                .updateAt(sensorMonitoring.getUpdateAt())
+                .updateAt(sensorMonitoring.getUpdatedAt())
                 .build();
     }
 
@@ -61,7 +61,7 @@ public class SensorMonitoringController {
                         .id(new SensorId(sensorId))
                         .enabled(false)
                         .lastTemperature(null)
-                        .updateAt(null)
+                        .updatedAt(null)
                         .build());
     }
 }

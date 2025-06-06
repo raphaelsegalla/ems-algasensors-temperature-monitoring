@@ -33,7 +33,7 @@ public class RabbitMQListener {
 
         temperatureMonitoringService.processTemperatureReading(temperatureLogData);
 
-        Thread.sleep(Duration.ofSeconds(5).toMillis()); // Simulating a delay for processing
+//        Thread.sleep(Duration.ofSeconds(5).toMillis()); // Simulating a delay for processing
     }
 
     @RabbitListener(queues = QUEUE_ALERTING, concurrency = "2-3")
